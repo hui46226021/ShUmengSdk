@@ -9,7 +9,7 @@
 * 添加微信 回调页面WXEntryActivity  注意：wxapi 后的路径一定不能变
 * 通过 ShareDialog.getInstance(this,null,"测试分享","https://www.baidu.co,","测试分享").showDialog();弹出分享菜单
 * 通过 mShareAPI.getPlatformInfo(MainActivity.this, SHARE_MEDIA.WEIXIN, umAuthListener); 第三方登录
-注意：在调用分享的页面 要加入 页面回调
+##注意：在调用分享的页面 要加入 页面回调
 ~~~java
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
