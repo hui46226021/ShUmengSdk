@@ -14,7 +14,7 @@ import static com.umeng.socialize.utils.DeviceConfig.context;
 
 /**
  * Created by zhush on 2017/2/6.
- * E-mail zhush@jerei.com
+ * E-mail 405086805@qq.com
  * PS
  */
 public class UMShareHelper {

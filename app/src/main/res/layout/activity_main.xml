@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#ffffff"
     tools:context="com.jrm.hailing.MainActivity">
 
     <ImageButton
@@ -33,7 +34,19 @@
         android:layout_height="50dp" />
     <Button
         android:id="@+id/share"
-        android:text="分享"
+        android:text="分享1"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/share1"
+        android:text="分享2"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/weChatPay"
+        android:text="微信支付"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

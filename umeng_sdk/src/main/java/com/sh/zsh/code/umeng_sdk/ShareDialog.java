@@ -37,12 +37,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 /**
- * 分享弹出
- * Created by zhush on 2016/7/13.
+ * Created by zhush on 2017/2/20
+ * E-mail 405086805@qq.com
+ * PS  分享弹出
  */
-public class ShareDialog {
 
-    private  static ShareDialog shareDialog;
+public class ShareDialog {
 
     private ShareDialog(){
 
@@ -65,9 +65,7 @@ public class ShareDialog {
      * @return
      */
     public static ShareDialog getInstance(Context context, String bibmapUrl, String mesage, String url,String tital) {
-        if(shareDialog==null){
-            shareDialog = new ShareDialog();
-        }
+        ShareDialog    shareDialog = new ShareDialog();
         shareDialog.context = context;
         shareDialog.mesage = mesage;
         shareDialog.url = url;
