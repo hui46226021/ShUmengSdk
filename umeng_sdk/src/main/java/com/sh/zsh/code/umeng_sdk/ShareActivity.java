@@ -23,7 +23,6 @@ import com.umeng.socialize.UMShareListener;
 import com.umeng.socialize.bean.SHARE_MEDIA;
 import com.umeng.socialize.media.UMImage;
 
-import net.qiujuer.genius.blur.StackBlur;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -66,12 +65,13 @@ public class ShareActivity extends AppCompatActivity implements View.OnClickList
         ShareActivity.tital=tital;
 
 
-// 设置控件允许绘制缓存
         view.setDrawingCacheEnabled(true);
-        Bitmap bitmap=   view.getDrawingCache();
+        Bitmap bitmap =  view.getDrawingCache();
 
-        Bitmap newBitmap = StackBlur.blurNatively(bitmap, 25, false);
-        ShareActivity.bitmap= newBitmap;
+//
+        ShareActivity.bitmap= bitmap.copy(bitmap.getConfig(),true);
+        bitmap.recycle();
+        bitmap = null;
         // 设置控件允许绘制缓存
         view.setDrawingCacheEnabled(false);
 
@@ -83,10 +83,18 @@ public class ShareActivity extends AppCompatActivity implements View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_share);
-
         rootLayout = (LinearLayout) findViewById(R.id.rootLayout);
+        // 设置控件允许绘制缓存
 
-        rootLayout.setBackgroundDrawable(new BitmapDrawable(bitmap));
+        Bitmap newBitmap=  BitmapUtils.blurBitmap(bitmap,25f,this);
+
+        // 设置控件允许绘制缓存
+        rootLayout.setBackgroundDrawable(new BitmapDrawable(newBitmap));
+
+
+
+
+
         wxhy = (ImageView)findViewById(R.id.wxhy);
         wxpyq = (ImageView)findViewById(R.id.wxpyq);
         xlwb = (ImageView)findViewById(R.id.xlwb);

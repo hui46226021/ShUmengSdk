@@ -19,8 +19,10 @@ import static com.umeng.socialize.utils.DeviceConfig.context;
  */
 public class UMShareHelper {
 
-    public static void init(Application application){
+    public static  Context context;
 
+    public static void init(Application application){
+        context=application;
        Resources resources= application.getResources();
         //注册第三方 id
         PlatformConfig.setWeixin(resources.getString(R.string.wexin_app_id), resources.getString(R.string.wexin_app_secret));

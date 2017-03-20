@@ -1,15 +1,15 @@
 <resources>
     <!--//友盟-->
-    <string name="umeng_appkey">XXXXXXXXXXXXXXXXX</string>
+    <string name="umeng_appkey">58982cb88630f56aa1001aec</string>
     <!--微信-->
-    <string name="wexin_app_id">XXXXXXXXXXXXXXXXX</string>
-    <string name="wexin_app_secret">XXXXXXXXXXXXXXXXXX</string>
+    <string name="wexin_app_id">wx31848b7540285537</string>
+    <string name="wexin_app_secret">9d83ccffb80b1e1eac02d4e0aa8b11d6</string>
     <!--微博-->
-    <string name="weibo_app_key">XXXXXXXXXXXXXXXX</string>
-    <string name="weibo_app_secret">XXXXXXXXXXXXX</string>
+    <string name="weibo_app_key">2423360104</string>
+    <string name="weibo_app_secret">b0d3a928637df68ff71ff17cea63f6a7</string>
     <!--QQ-->
-    <string name="qq_appkey">XXXXXXXXXXXXXXXXXXXXXXX</string>
-    <string name="qq_appid">XXXXXXXXXXXXXXXXXXXXX</string>
+    <string name="qq_appkey">Cv9P9QzyjiLRpFog</string>
+    <string name="qq_appid">1105845087</string>
 
 
 
